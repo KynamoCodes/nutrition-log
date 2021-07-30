@@ -4,17 +4,9 @@ import { capitalize, calculateCalories } from "./helpers.js";
 import AppData from "./app-data.js";
 //import "snackbar/dist/snackbar.min.css";
 
-// The Chart import syntax is different than you saw in the final project
-// We're using a newer version (3.5.x) and following the instructions for Webpack/Parcel
-// https://www.chartjs.org/docs/3.5.0/getting-started/integration.html#bundlers-webpack-rollup-etc
-import Chart from "chart.js/auto";
-
-// TODO: If you plan on hosting this, make sure to change the entire URL below to your own Firebase Firestore database
-const API = new FetchWrapper(
-  "https://firestore.googleapis.com/v1/projects/jsdemo-3f387/databases/(default)/documents/YOURNAMESPACEHERE"
-);
-
 const appData = new AppData();
+const nameSpace = "KynamoCodes";
+const API = new FetchWrapper(`https://firestore.googleapis.com/v1/projects/jsdemo-3f387/databases/(default)/documents/${nameSpace}`);
 
 const list = document.querySelector("#food-list");
 const form = document.querySelector("#create-form");
