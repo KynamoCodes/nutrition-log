@@ -229,6 +229,11 @@ input:not(.btn) {
   max-width: 450px;
 }
 
+#main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .container {
   max-width: 800px;
   margin: 0px auto;
@@ -371,4 +376,17 @@ select {
 }
 #total-calories-container span {
   font-weight: bold;
+}
+
+.tracker {
+  flex: 0 1 220px;
+}
+
+.chart-results {
+  flex: 1;
+  padding: 1rem;
+}
+
+.tracker-results{
+  flex: 1 1 100%;
 }
