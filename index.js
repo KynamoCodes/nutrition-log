@@ -1,8 +1,9 @@
 import FetchWrapper from "./fetch-wrapper.js";
 import { capitalize, calculateCalories } from "./helpers.js";
-import snackbar from "snackbar";
+//import snackbar from "snackbar";
 import AppData from "./app-data.js";
-import "snackbar/dist/snackbar.min.css";
+//import "snackbar/dist/snackbar.min.css";
+import "https://cdn.jsdelivr.net/npm/chart.js";
 
 // The Chart import syntax is different than you saw in the final project
 // We're using a newer version (3.5.x) and following the instructions for Webpack/Parcel
